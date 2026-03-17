@@ -1,0 +1,29 @@
+{
+  "type": "module",
+  "dependencies": {
+    "@eslint/js": "10.0.1",
+    "@testing-library/react": "16.3.2",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@typescript-eslint/parser": "8.57.0",
+    "eslint": "10.0.3",
+    "globals": "17.4.0",
+    "html-webpack-plugin": "^5.6.6",
+    "jsdom": "28.1.0",
+    "only-allow": "1.2.2",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "ts-loader": "^9.5.4",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.57.0",
+    "vitest": "^4.0.18",
+    "webpack": "^5.105.4",
+    "webpack-cli": "^6.0.1",
+    "wouter": "3.9.0"
+  },
+  "scripts": {
+    "tsc": "tsc --noEmit",
+    "eslint": "eslint",
+    "vitest": "vitest --run"
+  }
+}

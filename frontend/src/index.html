@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html style="height: 100%" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contacts Manager</title>
+
+  <% if (htmlWebpackPlugin.options.mode === 'production') { %>
+    <!-- React -->
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+
+    <!-- React Router -->
+    <script src="https://unpkg.com/react-router@6/umd/react-router.production.min.js"></script>
+    <script src="https://unpkg.com/react-router-dom@6/umd/react-router-dom.production.min.js"></script>
+  <% } %>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
+</head>
+<body style="height: 100%; margin: 0">
+
+<div id="root"></div>
+
+</body>
+</html>

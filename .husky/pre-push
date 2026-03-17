@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+pnpm --prefix frontend run tsc
+pnpm --prefix frontend run vitest

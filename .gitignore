@@ -1,0 +1,15 @@
+# --- frontend ---
+/frontend/node_modules
+
+# --- backend ---
+/backend/node_modules
+
+# --- sender ---
+/sender/public
+/sender/node_modules
+/sender/test-results
+/sender/blob-report
+/sender/playwright-report
+/sender/playwright/.cache
+/sender/playwright/.auth
+
