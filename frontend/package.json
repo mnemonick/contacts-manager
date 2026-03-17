@@ -20,10 +20,5 @@
     "webpack": "^5.105.4",
     "webpack-cli": "^6.0.1",
     "wouter": "3.9.0"
-  },
-  "scripts": {
-    "tsc": "tsc --noEmit",
-    "eslint": "eslint",
-    "vitest": "vitest --run"
   }
 }
