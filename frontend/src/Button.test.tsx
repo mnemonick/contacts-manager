@@ -8,7 +8,7 @@ describe('Button component', () => {
     const root = container.firstChild;
 
     expect(root).toBeTruthy();
-    expect(root?.textContent).toBe('BUTTON');
+    expect(root?.textContent).toBe('BUTTON a');
   });
 });
 
