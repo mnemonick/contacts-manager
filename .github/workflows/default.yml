@@ -10,3 +10,6 @@ jobs:
 
       - name: Simple success
         run: echo "This workflow always passes ✅"
+
+      - name: Tests
+        run: pnpm --prefix=frontend vitest -- --run
