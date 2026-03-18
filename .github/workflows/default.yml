@@ -44,7 +44,7 @@ jobs:
         run: pnpm --prefix=backend exec tsc
 
       - name: Start backend
-        run: pnpm --prefix=backend ./dist/server.js
+        run: node ./dist/server.js
 
       - name: Tests
         run: pnpm --prefix=backend vitest -- --run
