@@ -1,4 +1,4 @@
-on: [push, pull_request]
+on: [ push, pull_request ]
 
 jobs:
   frontend:
@@ -58,13 +58,16 @@ jobs:
 
   deploy:
     runs-on: ubuntu-24.04
-    needs: [backend, frontend]
+    needs: [ backend, frontend ]
 
     steps:
       - name: sshing
         uses: appleboy/ssh-action@v1.0.3
         with:
+          script_stop: true
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USERNAME }}
           key: ${{ secrets.SSH_KEY }}
-          script: touch /root/file.txt
+          script: |
+            cd /
+            git pull
