@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-pnpm --prefix=frontend tsc
+pnpm --prefix=frontend tsc -- --noEmit
 pnpm --prefix=frontend vitest -- --run

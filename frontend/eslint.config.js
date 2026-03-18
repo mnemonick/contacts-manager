@@ -1,8 +1,9 @@
 import js from "@eslint/js";
 import globals from "globals";
 import tseslint from "typescript-eslint";
+import { defineConfig } from "eslint/config";
 
-export default [
+export default defineConfig([
   {
     files: ["./src/testing.ts"],
     languageOptions: {
@@ -20,4 +21,4 @@ export default [
       "semi": ["error", "always"]
     }
   }
-];
+]);

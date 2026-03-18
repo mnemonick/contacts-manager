@@ -36,7 +36,7 @@ export default function (env, argv) {
       }),
       {
         apply: (compiler) => {
-          compiler.hooks.watchRun.tap('ClearConsolePlugin', () => console.log('-------------------------------------'));
+          compiler.hooks.watchRun.tap('ClearConsolePlugin', () => console.log('--------------------------------------------------------------------------'));
         }
       }
     ],
