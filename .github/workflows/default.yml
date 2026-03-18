@@ -40,6 +40,9 @@ jobs:
       - name: Install dependencies
         run: pnpm --prefix=backend install
 
+      - name: Compile backend
+        run: pnpm --prefix=backend exec tsc
+
       - name: Start backend
         run: pnpm --prefix=backend ./dist/server.js
 
