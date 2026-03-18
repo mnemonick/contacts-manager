@@ -34,7 +34,6 @@ jobs:
         with:
           node-version: 24
 
-
       - name: Setup pnpm
         run: npm install -g pnpm
 
@@ -45,7 +44,7 @@ jobs:
         run: pnpm --prefix=backend exec tsc
 
       - name: Start backend
-        run: node ./dist/server.js
+        run: node ./backend/dist/server.js
 
       - name: Tests
         run: pnpm --prefix=backend vitest -- --run
