@@ -44,7 +44,10 @@ jobs:
         run: pnpm --prefix=backend exec tsc
 
       - name: Start backend
-        run: node ./backend/dist/server.js
+        run: node ./backend/dist/server.js &
+
+      - name: Waiting for start
+        run: pnpm exec wait-on http://localhost:8000 --timeout 1000
 
       - name: Tests
         run: pnpm --prefix=backend vitest -- --run
