@@ -1,7 +1,7 @@
 import express from 'express';
 
 const app = express();
-const port = 3000;
+const port = 8000;
 
 // Обработка GET-запроса на главную страницу
 app.get('/', (req: any, res: any) => {
